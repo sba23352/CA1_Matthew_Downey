@@ -23,6 +23,12 @@ public class CA1_Matthew_Downey {
         try {
             // import scanner to read data from a file using relative path
             Scanner read = new Scanner (new FileReader("student.txt"));
+            //use a while loop to read all the data from file
+            String lines;
+            while ((lines = read.nextLine()) !=null) {
+                System.out.println(lines);
+                
+            }
        
         } catch (Exception e) {
             System.out.println("No more data found");
