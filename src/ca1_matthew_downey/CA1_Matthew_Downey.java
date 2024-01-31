@@ -30,6 +30,18 @@ public class CA1_Matthew_Downey {
             String[] parts = lines.split("\\s+");
             System.out.println(lines);
             
+            // use if else statment to validate each part from file
+            if (parts.length <=3) {
+                String firstname = parts[0];
+                String surname = parts[1];
+                int classnum = Integer.parseInt(parts[2]);
+                String studentnum = parts[3];
+                System.out.println("Valid data");
+            } else  {
+                System.out.println("invalid data" + parts);
+            }
+            
+            
                 
             }
        
