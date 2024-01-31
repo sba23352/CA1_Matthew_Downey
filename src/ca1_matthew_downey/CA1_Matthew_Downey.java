@@ -74,7 +74,19 @@ public class CA1_Matthew_Downey {
         //return method implementation to main method
         } return validStudentnum;
         
-    }     
+    //new method to check student type based on class numbers from file
+    } public static String studetnType(int classnum){
+    //if else statement to see whether student has a very light or light workload and also if they are part-time or full-time
+          if (classnum == 1) {
+              return "very light";
+          }else if (classnum == 2) {
+              return "light";
+          }else if (classnum >=3 || classnum <=5) {
+              return "part time";
+          } else {
+              return "full time";
+          }
+    }
     
     
 }
