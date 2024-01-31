@@ -26,7 +26,10 @@ public class CA1_Matthew_Downey {
             //use a while loop to read all the data from file
             String lines;
             while ((lines = read.nextLine()) !=null) {
-                System.out.println(lines);
+            //store data from file in an array to check conditions
+            String[] parts = lines.split("\\s+");
+            System.out.println(lines);
+            
                 
             }
        
