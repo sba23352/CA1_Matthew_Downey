@@ -34,7 +34,13 @@ public class CA1_Matthew_Downey {
             System.out.println("No more data found");
         }
         
-        
+        //validate data from file based on CA requirements
+    } public static boolean validData (String firstname ,String surname ,int classnum ,String studentnum) {
+             
+                    return firstname.matches("[a-zA-Z]+")
+                    && surname.matches("[a-zA-Z0-9]+")
+                    && classnum >= 1 && classnum <=8
+                    &&studentnum.matches("\\d{2}[a-zA-Z]{1,2}\\d+");
     }
     
 }
