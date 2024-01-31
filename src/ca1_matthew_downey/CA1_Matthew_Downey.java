@@ -4,6 +4,12 @@
  */
 package ca1_matthew_downey;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author amber
@@ -14,7 +20,15 @@ public class CA1_Matthew_Downey {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        try {
+            // import scanner to read data from a file using relative path
+            Scanner read = new Scanner (new FileReader("student.txt"));
+       
+        } catch (Exception e) {
+            System.out.println("No more data found");
+        }
+        
+        
     }
     
 }
