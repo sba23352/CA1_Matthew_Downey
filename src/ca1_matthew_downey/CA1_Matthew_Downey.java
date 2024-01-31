@@ -56,6 +56,25 @@ public class CA1_Matthew_Downey {
                     && surname.matches("[a-zA-Z0-9]+")
                     && classnum >= 1 && classnum <=8
                     &&studentnum.matches("\\d{2}[a-zA-Z]{1,2}\\d+");
-    }
+    
+        //validate student num based on CA requirements
+    } public static String validStudentnum(String studentnum) {
+        //check first 2 charecters are letter
+        if (!"[0-9]+".equals(studentnum.substring(0, 1))) {
+            System.out.println("Invalid student number, charecters 1&2 must be numbers");
+       
+        //check charecter 3 and 4 are letter
+        } else if (!"[a-zA-Z]+".equals(studentnum.substring(2, 4))) {
+            System.out.println("invalid student number, charecters 3&4 must be letters");
+          
+        //check charecters 5 onward are numbers
+        } else if (!"[0-9]+".equals(studentnum.substring(5, 8))) {
+            System.out.println("Invalid student number, charecters 5-8 must be numbers");
+           
+        //return method implementation to main method
+        } return validStudentnum;
+        
+    }     
+    
     
 }
